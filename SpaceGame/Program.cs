@@ -12,7 +12,7 @@ namespace SpaceGame
         [STAThread]
         static void Main()
         {
-            //test
+            //checking if files are ignored
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SpaceForm());
