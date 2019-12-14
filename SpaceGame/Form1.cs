@@ -14,7 +14,6 @@ namespace SpaceGame
         PictureBox[] dusmanlar;
         PictureBox[] mermiler;
         PictureBox[] dusmanMermi;
-
         Random rnd; // ekrandaki kayan yıldızların pozisyonu için bir random değer
 
         int arkaplanHiz; // görüleceği üzere arkaplan hareket ediyor.. Arkaplan hızını ArkaPlanHiz ile ayarlayacağız.    
@@ -28,7 +27,6 @@ namespace SpaceGame
         bool durdur;
         bool oyunBitti;
 
-        // Constructor
         public SpaceForm()
         {
             InitializeComponent();
@@ -77,7 +75,6 @@ namespace SpaceGame
             dusmanlar = new PictureBox[10];
             mermiler = new PictureBox[3];
             dusmanMermi = new PictureBox[10];
-
             
             rnd = new Random(); // arkaplan yıldızlarının rastgele ekrana dağılması için kullanılacak olan Random değişken
 
@@ -244,7 +241,6 @@ namespace SpaceGame
             if (UzayGemisi.Top > 10)
             {
                 UzayGemisi.Top -= uzayGemisiHizi;
-
             }
         }
 
@@ -364,7 +360,7 @@ namespace SpaceGame
                     patlama.settings.volume = 30;
                     patlama.controls.play();
                     UzayGemisi.Visible = false;
-                    OyunBitti("Oyun Bitti :(");
+                    OyunBitti("Oyun Bitti");
                 }
             }
         }
@@ -413,17 +409,14 @@ namespace SpaceGame
 
         private void Aircraft_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Text_lbl_Click(object sender, EventArgs e)
         {
-
         }
     }
 }
