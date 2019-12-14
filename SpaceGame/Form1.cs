@@ -262,7 +262,6 @@ namespace SpaceGame
                 {
                     mermiler[i].Visible = true;
                     mermiler[i].Top -= mermiHizi;
-
                     Carpisma();
                 }
                 else
