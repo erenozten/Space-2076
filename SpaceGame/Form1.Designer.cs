@@ -38,37 +38,53 @@
             this.EnemiesMunitionTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.UzayGemisi)).BeginInit();
             this.SuspendLayout();
-
+            // 
+            // MoveBgTimer
+            // 
             this.MoveBgTimer.Enabled = true;
             this.MoveBgTimer.Interval = 10;
             this.MoveBgTimer.Tick += new System.EventHandler(this.MoveBgTimer_Tick);
-
+            // 
+            // UzayGemisi
+            // 
             this.UzayGemisi.BackColor = System.Drawing.Color.Transparent;
             this.UzayGemisi.Image = ((System.Drawing.Image)(resources.GetObject("UzayGemisi.Image")));
-            this.UzayGemisi.Location = new System.Drawing.Point(237, 387);
+            this.UzayGemisi.Location = new System.Drawing.Point(237, 357);
             this.UzayGemisi.Name = "UzayGemisi";
-            this.UzayGemisi.Size = new System.Drawing.Size(78, 68);
+            this.UzayGemisi.Size = new System.Drawing.Size(96, 92);
             this.UzayGemisi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.UzayGemisi.TabIndex = 0;
             this.UzayGemisi.TabStop = false;
             this.UzayGemisi.Click += new System.EventHandler(this.Aircraft_Click);
-
+            // 
+            // MoveLeftTimer
+            // 
             this.MoveLeftTimer.Interval = 5;
             this.MoveLeftTimer.Tick += new System.EventHandler(this.MoveLeftTimer_Tick);
-
+            // 
+            // MoveRigthTimer
+            // 
             this.MoveRigthTimer.Interval = 5;
             this.MoveRigthTimer.Tick += new System.EventHandler(this.MoveRigthTimer_Tick);
-
+            // 
+            // MoveTopTimer
+            // 
             this.MoveTopTimer.Interval = 5;
             this.MoveTopTimer.Tick += new System.EventHandler(this.MoveTopTimer_Tick);
-
+            // 
+            // MoveDownTimer
+            // 
             this.MoveDownTimer.Interval = 5;
             this.MoveDownTimer.Tick += new System.EventHandler(this.MoveDownTimer_Tick);
-
+            // 
+            // MoveMunitionTimer
+            // 
             this.MoveMunitionTimer.Enabled = true;
             this.MoveMunitionTimer.Interval = 20;
             this.MoveMunitionTimer.Tick += new System.EventHandler(this.MermiyiHareketEttirTimer_Tick);
-
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,7 +94,9 @@
             this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 26;
             this.label1.Text = "SCORE:";
-
+            // 
+            // scorelbl
+            // 
             this.scorelbl.AutoSize = true;
             this.scorelbl.BackColor = System.Drawing.Color.Transparent;
             this.scorelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
@@ -88,7 +106,9 @@
             this.scorelbl.Size = new System.Drawing.Size(32, 24);
             this.scorelbl.TabIndex = 27;
             this.scorelbl.Text = "00";
-
+            // 
+            // levelbl
+            // 
             this.levelbl.AutoSize = true;
             this.levelbl.BackColor = System.Drawing.Color.Transparent;
             this.levelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
@@ -98,7 +118,9 @@
             this.levelbl.Size = new System.Drawing.Size(32, 24);
             this.levelbl.TabIndex = 29;
             this.levelbl.Text = "01";
-
+            // 
+            // label4
+            // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,10 +131,14 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "LEVEL:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-
+            // 
+            // MoveEnemiesTimer
+            // 
             this.MoveEnemiesTimer.Enabled = true;
             this.MoveEnemiesTimer.Tick += new System.EventHandler(this.DusmanlariHareketEttirTimer_Tick);
-
+            // 
+            // Text_lbl
+            // 
             this.Text_lbl.AutoSize = true;
             this.Text_lbl.BackColor = System.Drawing.Color.Transparent;
             this.Text_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -124,7 +150,9 @@
             this.Text_lbl.Text = "Game Over";
             this.Text_lbl.Visible = false;
             this.Text_lbl.Click += new System.EventHandler(this.Text_lbl_Click);
-
+            // 
+            // ReplayBtn
+            // 
             this.ReplayBtn.BackColor = System.Drawing.Color.RoyalBlue;
             this.ReplayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ReplayBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -137,7 +165,9 @@
             this.ReplayBtn.UseVisualStyleBackColor = false;
             this.ReplayBtn.Visible = false;
             this.ReplayBtn.Click += new System.EventHandler(this.ReplayBtn_Click);
-
+            // 
+            // QuitBtn
+            // 
             this.QuitBtn.BackColor = System.Drawing.Color.Red;
             this.QuitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.QuitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,11 +180,15 @@
             this.QuitBtn.UseVisualStyleBackColor = false;
             this.QuitBtn.Visible = false;
             this.QuitBtn.Click += new System.EventHandler(this.QuitBtn_Click);
-
+            // 
+            // EnemiesMunitionTimer
+            // 
             this.EnemiesMunitionTimer.Enabled = true;
             this.EnemiesMunitionTimer.Interval = 20;
             this.EnemiesMunitionTimer.Tick += new System.EventHandler(this.DusmanlarMermiTimer_Tick);
-
+            // 
+            // SpaceForm
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(56)))));
