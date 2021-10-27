@@ -143,7 +143,7 @@
             this.Text_lbl.BackColor = System.Drawing.Color.Transparent;
             this.Text_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Text_lbl.ForeColor = System.Drawing.Color.Red;
-            this.Text_lbl.Location = new System.Drawing.Point(61, 108);
+            this.Text_lbl.Location = new System.Drawing.Point(144, 110);
             this.Text_lbl.Name = "Text_lbl";
             this.Text_lbl.Size = new System.Drawing.Size(272, 55);
             this.Text_lbl.TabIndex = 35;
